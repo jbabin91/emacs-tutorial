@@ -1,8 +1,6 @@
 ;; You will most likely need to adjust this font size for your system!
 (defvar runemacs/default-font-size 120)
 
-(setq inhibit-startup-message t)
-
 (scroll-bar-mode -1) ; Disable visible scrollbar
 (tool-bar-mode -1)   ; Disable the toolbar
 (tooltip-mode -1)    ; Disable tooltips
@@ -32,9 +30,6 @@
 
 (require 'use-package)
 (setq use-package-always-ensure t)
-
-(column-number-mode)
-(global-display-line-numbers-mode t)
 
 ;; Disable line numbers for some modes
 (dolist (mode '(org-mode-hook
